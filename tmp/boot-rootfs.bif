@@ -1,0 +1,1 @@
+img:{[bootloader] tmp/led_blinker.fsbl/executable.elf tmp/ssbl.elf [load=0x2000000] rootfs.dtb [load=0x2008000] zImage.bin}

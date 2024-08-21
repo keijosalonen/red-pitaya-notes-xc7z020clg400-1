@@ -1,0 +1,98 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Sun Aug 11 20:27:23 2024
+| Host         : WhiteRabbit running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_control_sets -verbose -file system_wrapper_control_sets_placed.rpt
+| Design       : system_wrapper
+| Device       : xc7z020
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    20 |
+|    Minimum number of control sets                        |    20 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    55 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    20 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     2 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     5 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     8 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              11 |            4 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              41 |           13 |
+| Yes          | No                    | No                     |             173 |           37 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              80 |           21 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |                      Enable Signal                     |                           Set/Reset Signal                          | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+--------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+--------------+
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_3/buf_1/E[0]                   | system_i/hub_0/inst/buf_3/buf_1/SR[0]                               |                3 |              4 |         1.33 |
+|  system_i/pll_0/inst/clk_out1 |                                                        | system_i/rst_0/U0/EXT_LPF/lpf_int                                   |                2 |              5 |         2.50 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_4/int_rready_wire              | system_i/hub_0/inst/buf_3/buf_1/int_valid_reg_reg_0                 |                3 |              6 |         2.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/rst_0/U0/SEQ/seq_cnt_en                       | system_i/rst_0/U0/SEQ/SEQ_COUNTER/q_int[5]_i_1_n_0                  |                2 |              6 |         3.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_0/buf_1/CE016_out              | system_i/hub_0/inst/buf_3/buf_0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N |                1 |              8 |         8.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_0/buf_1/int_data_reg_reg[33]_0 | system_i/hub_0/inst/buf_3/buf_0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N |                1 |              8 |         8.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_0/buf_1/CE019_out              | system_i/hub_0/inst/buf_3/buf_0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N |                1 |              8 |         8.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_0/buf_1/CE0                    | system_i/hub_0/inst/buf_3/buf_0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N |                1 |              8 |         8.00 |
+|  system_i/pll_0/inst/clk_out1 |                                                        | system_i/hub_0/inst/buf_3/buf_0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N |                4 |              8 |         2.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_2/E[0]                         |                                                                     |                2 |             12 |         6.00 |
+|  system_i/pll_0/inst/clk_out1 |                                                        |                                                                     |                5 |             12 |         2.40 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_4/int_rready_wire              |                                                                     |                2 |             13 |         6.50 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_1/buf_1/E[0]                   |                                                                     |                5 |             17 |         3.40 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_0/buf_0/int_ready_reg_reg_0    |                                                                     |                3 |             17 |         5.67 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_3/buf_0/int_ready_reg_reg_0    |                                                                     |                4 |             20 |         5.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_3/buf_1/int_ready_wire         |                                                                     |                6 |             20 |         3.33 |
+|  system_i/pll_0/inst/clk_out1 |                                                        | system_i/dac_0/inst/int_rst_reg[0]_i_1_n_0                          |                7 |             28 |         4.00 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_4/int_rready_wire              | system_i/hub_0/inst/buf_4/int_data_reg[31]_i_1_n_0                  |                9 |             32 |         3.56 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_1/buf_0/int_ready_reg_reg_0    |                                                                     |                5 |             37 |         7.40 |
+|  system_i/pll_0/inst/clk_out1 | system_i/hub_0/inst/buf_2/PS7_i[0]                     |                                                                     |               10 |             37 |         3.70 |
++-------------------------------+--------------------------------------------------------+---------------------------------------------------------------------+------------------+----------------+--------------+
+
+

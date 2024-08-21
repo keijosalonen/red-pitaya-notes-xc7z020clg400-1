@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun Aug 11 20:26:35 2024
+# Process ID: 167329
+# Current directory: /home/ksalone/Loitsut/red-pitaya-notes/tmp/template.runs/impl_1
+# Command line: vivado -log system_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system_wrapper.tcl -notrace
+# Log file: /home/ksalone/Loitsut/red-pitaya-notes/tmp/template.runs/impl_1/system_wrapper.vdi
+# Journal file: /home/ksalone/Loitsut/red-pitaya-notes/tmp/template.runs/impl_1/vivado.jou
+# Running On: WhiteRabbit, OS: Linux, CPU Frequency: 4000.506 MHz, CPU Physical cores: 4, Host memory: 16568 MB
+#-----------------------------------------------------------
+source system_wrapper.tcl -notrace

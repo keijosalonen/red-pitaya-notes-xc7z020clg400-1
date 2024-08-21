@@ -1,0 +1,341 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (lin64) Build 3865809 Sun May  7 15:04:56 MDT 2023
+| Date         : Sun Aug 11 20:28:22 2024
+| Host         : WhiteRabbit running 64-bit Debian GNU/Linux 12 (bookworm)
+| Command      : report_methodology -file system_wrapper_methodology_drc_routed.rpt -pb system_wrapper_methodology_drc_routed.pb -rpx system_wrapper_methodology_drc_routed.rpx
+| Design       : system_wrapper
+| Device       : xc7z020clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 57
++-----------+----------+-------------------------------------------------+------------+
+| Rule      | Severity | Description                                     | Violations |
++-----------+----------+-------------------------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay                   | 52         |
+| XDCC-5    | Warning  | User Non-Timing constraint/property overwritten | 4          |
+| RTGT-1    | Advisory | RAM retargeting possibility                     | 1          |
++-----------+----------+-------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[10] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[11] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[12] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#4 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[13] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#5 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[14] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#6 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[15] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#7 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[2] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#8 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[3] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#9 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[4] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#10 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[5] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#11 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[6] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#12 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[7] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#13 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[8] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#14 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_a_i[9] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#15 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[10] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#16 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[11] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#17 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[12] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#18 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[13] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#19 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[14] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#20 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[15] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#21 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[2] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#22 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[3] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#23 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[4] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#24 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[5] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#25 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[6] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#26 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[7] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#27 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[8] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#28 Warning
+Missing input or output delay  
+An input delay is missing on adc_dat_b_i[9] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#29 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[0] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#30 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[10] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#31 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[11] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#32 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[12] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#33 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[13] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#34 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[1] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#35 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[2] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#36 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[3] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#37 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[4] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#38 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[5] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#39 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[6] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#40 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[7] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#41 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[8] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#42 Warning
+Missing input or output delay  
+An output delay is missing on dac_dat_o[9] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#43 Warning
+Missing input or output delay  
+An output delay is missing on dac_rst_o relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#44 Warning
+Missing input or output delay  
+An output delay is missing on dac_sel_o relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#45 Warning
+Missing input or output delay  
+An output delay is missing on led_o[0] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#46 Warning
+Missing input or output delay  
+An output delay is missing on led_o[1] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#47 Warning
+Missing input or output delay  
+An output delay is missing on led_o[2] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#48 Warning
+Missing input or output delay  
+An output delay is missing on led_o[3] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#49 Warning
+Missing input or output delay  
+An output delay is missing on led_o[4] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#50 Warning
+Missing input or output delay  
+An output delay is missing on led_o[5] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#51 Warning
+Missing input or output delay  
+An output delay is missing on led_o[6] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+TIMING-18#52 Warning
+Missing input or output delay  
+An output delay is missing on led_o[7] relative to the rising and/or falling clock edge(s) of adc_clk_p_i.
+Related violations: <none>
+
+XDCC-5#1 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[0] overrides a previous user property.
+New Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 115)
+Previous Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 103)
+Related violations: <none>
+
+XDCC-5#2 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[1] overrides a previous user property.
+New Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 115)
+Previous Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 103)
+Related violations: <none>
+
+XDCC-5#3 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[2] overrides a previous user property.
+New Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 115)
+Previous Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 103)
+Related violations: <none>
+
+XDCC-5#4 Warning
+User Non-Timing constraint/property overwritten  
+A new XDC property IOSTANDARD on dac_pwm_o[3] overrides a previous user property.
+New Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 115)
+Previous Source: /home/ksalone/Loitsut/red-pitaya-notes/cfg/ports.xdc (Line: 103)
+Related violations: <none>
+
+RTGT-1#1 Advisory
+RAM retargeting possibility  
+Identified 12 RAM32X1D primitives that could be retargeted to RAM32M. Retargeting will save approximately 4 memory LUTs and improve routability. These can usually be achieved using synthesis inference or XPMs. The memories are system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_0_0,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_10_10,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_11_11,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_12_12,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_13_13,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_14_14,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_15_15,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_1_1,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_2_2,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_3_3,
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_4_4
+system_i/xadc_0/inst/ram_0/xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0_31_5_5
+Related violations: <none>
+
+
